@@ -258,7 +258,7 @@ fun UserInfoSheet(
                         )
 
                         Text(
-                            text = stringResource(id = R.string.user_info_sheet_category_joined_stoat),
+                            text = stringResource(id = R.string.user_info_sheet_category_joined_zeelo),
                             style = MaterialTheme.typography.labelMedium
                         )
                     }
@@ -285,7 +285,7 @@ fun UserInfoSheet(
                     )
 
                     Text(
-                        text = stringResource(id = R.string.user_info_sheet_category_joined_stoat),
+                        text = stringResource(id = R.string.user_info_sheet_category_joined_zeelo),
                         style = MaterialTheme.typography.labelMedium
                     )
                 }

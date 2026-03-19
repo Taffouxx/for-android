@@ -1,11 +1,9 @@
 package chat.stoat.core.model.data
 
-const val STOAT_BASE = "https://api.stoat.chat/0.8"
-const val STOAT_SUPPORT = "https://support.stoat.chat"
-const val STOAT_MARKETING = "https://stoat.chat"
-const val STOAT_FILES = "https://cdn.stoatusercontent.com"
-const val STOAT_PROXY = "https://proxy.stoatusercontent.com"
-const val STOAT_WEB_APP = "https://stoat.chat"
-const val STOAT_INVITES = "https://stt.gg"
-const val STOAT_WEBSOCKET = "wss://events.stoat.chat"
-const val STOAT_KJBOOK = "https://stoatchat.github.io/for-android"
+const val STOAT_BASE = "https://chat.zeelo.fun/api"
+const val STOAT_FILES = "https://chat.zeelo.fun/autumn"
+const val STOAT_PROXY = "https://chat.zeelo.fun/january"
+const val STOAT_WEBSOCKET = "wss://chat.zeelo.fun/ws"
+const val STOAT_WEB_APP = "https://chat.zeelo.fun"
+const val STOAT_INVITES = "https://chat.zeelo.fun"
+const val STOAT_MARKETING = "https://zeelo.fun"

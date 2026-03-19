@@ -2,20 +2,18 @@ name: Android CI
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
 
 jobs:
   build:
-    if: ${{ false }} # at the moment this simply wastes our minutes, we will enable it when we have unit tests etc.
-
     runs-on: ubuntu-latest
 
     env:
-      RVX_SENTRY_DSN: ${{ vars.RVX_SENTRY_DSN }}
-      RVX_ANALYSIS_ENABLED: ${{ vars.RVX_ANALYSIS_ENABLED }}
-      RVX_ANALYSIS_BASEURL: ${{ vars.RVX_ANALYSIS_BASEURL }}
-      RVX_DEBUG_APP_NAME: ${{ vars.RVX_DEBUG_APP_NAME }}
-      RVX_BUILD_FLAVOUR_ID: ${{ vars.RVX_BUILD_FLAVOUR_ID }}
+      RVX_SENTRY_DSN: ${{ secrets.RVX_SENTRY_DSN }}
+      RVX_ANALYSIS_ENABLED: ${{ secrets.RVX_ANALYSIS_ENABLED }}
+      RVX_ANALYSIS_BASEURL: ${{ secrets.RVX_ANALYSIS_BASEURL }}
+      RVX_DEBUG_APP_NAME: ${{ secrets.RVX_DEBUG_APP_NAME }}
+      RVX_BUILD_FLAVOUR_ID: ${{ secrets.RVX_BUILD_FLAVOUR_ID }}
 
     steps:
       - uses: actions/checkout@v4

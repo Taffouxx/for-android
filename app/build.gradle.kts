@@ -108,7 +108,7 @@ android {
             resValue(
                 "string",
                 "app_name",
-                buildproperty("build.debug.app_name", "RVX_DEBUG_APP_NAME")!!
+                buildproperty("build.debug.app_name", "RVX_DEBUG_APP_NAME") ?: "\"Zeelo Debug\""
             )
 
             buildConfigField(
