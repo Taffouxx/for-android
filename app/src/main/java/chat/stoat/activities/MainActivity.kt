@@ -350,10 +350,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        SentryAndroid.init(this) { options ->
-            options.dsn = BuildConfig.SENTRY_DSN
-            options.release = BuildConfig.VERSION_NAME
-        }
+        // SentryAndroid.init(this) { options ->
+        //     options.dsn = BuildConfig.SENTRY_DSN
+        //     options.release = BuildConfig.VERSION_NAME
+        // }
 
         @Suppress("DEPRECATION") // We are fixing a bug in the splash screen
         window.statusBarColor = Color.Transparent.toArgb()
