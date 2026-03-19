@@ -835,4 +835,16 @@
     <string name="geogate_description">Zeelo may block content in certain jurisdictions in response to legislation or legal notices</string>
     <string name="geogate_description_variant_osa_uk_25" translatable="false">This channel is not available in your region while we review options on legal compliance.</string>
     <string name="geogate_acknowledge">Acknowledge</string>
+
+    <string name="user_badge_battlepass">Battle Pass</string>
+    <string name="user_badge_designer">Designer</string>
+    <string name="user_badge_partner1">Partner</string>
+    <string name="user_badge_partner2">Partner</string>
+    <string name="user_badge_partner3">Partner</string>
+
+    <string name="user_badge_battlepass">Battle Pass</string>
+    <string name="user_badge_designer">Designer</string>
+    <string name="user_badge_partner1">Partner</string>
+    <string name="user_badge_partner2">Partner</string>
+    <string name="user_badge_partner3">Partner</string>
 </resources>

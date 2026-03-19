@@ -123,6 +123,41 @@ fun BadgeListEntry(badge: UserBadges) {
                 icon = painterResource(R.drawable.user_badge_reserved_relevant_two)
             )
         }
+
+        UserBadges.BattlePass.value -> {
+            BadgeListEntryTemplate(
+                label = stringResource(R.string.user_badge_battlepass),
+                icon = painterResource(R.drawable.user_badge_battlepass)
+            )
+        }
+
+        UserBadges.Designer.value -> {
+            BadgeListEntryTemplate(
+                label = stringResource(R.string.user_badge_designer),
+                icon = painterResource(R.drawable.user_badge_designer)
+            )
+        }
+
+        UserBadges.Partner1.value -> {
+            BadgeListEntryTemplate(
+                label = stringResource(R.string.user_badge_partner1),
+                icon = painterResource(R.drawable.user_badge_partner1)
+            )
+        }
+
+        UserBadges.Partner2.value -> {
+            BadgeListEntryTemplate(
+                label = stringResource(R.string.user_badge_partner2),
+                icon = painterResource(R.drawable.user_badge_partner2)
+            )
+        }
+
+        UserBadges.Partner3.value -> {
+            BadgeListEntryTemplate(
+                label = stringResource(R.string.user_badge_partner3),
+                icon = painterResource(R.drawable.user_badge_partner3)
+            )
+        }
     }
 }
 
@@ -162,6 +197,11 @@ fun UserBadgeRow(badges: Long) {
                         UserBadges.EarlyAdopter -> painterResource(R.drawable.user_badge_early_adopter)
                         UserBadges.ReservedRelevantJokeBadge1 -> painterResource(R.drawable.user_badge_reserved_relevant_one)
                         UserBadges.ReservedRelevantJokeBadge2 -> painterResource(R.drawable.user_badge_reserved_relevant_two)
+                        UserBadges.BattlePass -> painterResource(R.drawable.user_badge_battlepass)
+                        UserBadges.Designer -> painterResource(R.drawable.user_badge_designer)
+                        UserBadges.Partner1 -> painterResource(R.drawable.user_badge_partner1)
+                        UserBadges.Partner2 -> painterResource(R.drawable.user_badge_partner2)
+                        UserBadges.Partner3 -> painterResource(R.drawable.user_badge_partner3)
                     },
                     contentDescription = when (badge) {
                         UserBadges.Developer -> stringResource(R.string.user_badge_developer)
@@ -175,6 +215,11 @@ fun UserBadgeRow(badges: Long) {
                         UserBadges.EarlyAdopter -> stringResource(R.string.user_badge_early_adopter)
                         UserBadges.ReservedRelevantJokeBadge1 -> stringResource(R.string.user_badge_reserved_relevant_joke_badge_1)
                         UserBadges.ReservedRelevantJokeBadge2 -> stringResource(R.string.user_badge_reserved_relevant_joke_badge_2)
+                        UserBadges.BattlePass -> stringResource(R.string.user_badge_battlepass)
+                        UserBadges.Designer -> stringResource(R.string.user_badge_designer)
+                        UserBadges.Partner1 -> stringResource(R.string.user_badge_partner1)
+                        UserBadges.Partner2 -> stringResource(R.string.user_badge_partner2)
+                        UserBadges.Partner3 -> stringResource(R.string.user_badge_partner3)
                     },
                     modifier = Modifier
                         .size(32.dp)
