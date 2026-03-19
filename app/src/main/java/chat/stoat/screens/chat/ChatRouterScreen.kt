@@ -100,7 +100,7 @@ import chat.stoat.sheets.UserInfoSheet
 import chat.stoat.sheets.WebHookUserSheet
 import chat.stoat.sheets.spark.SwipeToReplySparkSheet
 import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.messaging.FirebaseMessaging
+// import com.google.firebase.messaging.FirebaseMessaging
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import io.sentry.Sentry
@@ -217,7 +217,7 @@ class ChatRouterViewModel @Inject constructor(
 
     fun setRegisterForNotifications() {
         showNotificationRationale = false
-        FirebaseMessaging.getInstance().token.addOnCompleteListener(
+        /* FirebaseMessaging.getInstance().token.addOnCompleteListener(
             OnCompleteListener { task ->
                 if (!task.isSuccessful) {
                     Log.w("FCM", "Fetching FCM registration token failed", task.exception)
@@ -231,7 +231,7 @@ class ChatRouterViewModel @Inject constructor(
                     subscribePush(auth = token)
                 }
             }
-        )
+        ) */
     }
 
     fun markNotificationsRejected() {

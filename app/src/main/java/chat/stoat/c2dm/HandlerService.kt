@@ -1,3 +1,4 @@
+﻿/*
 package chat.stoat.c2dm
 
 import android.app.PendingIntent
@@ -233,3 +234,4 @@ class HandlerService : FirebaseMessagingService() {
         /// END TEMPORARY CODE
     }
 }
+*/

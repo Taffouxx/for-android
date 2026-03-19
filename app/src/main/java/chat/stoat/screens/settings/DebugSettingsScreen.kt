@@ -56,7 +56,7 @@ import chat.stoat.ui.theme.FragmentMono
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailabilityLight
 import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.messaging.FirebaseMessaging
+// import com.google.firebase.messaging.FirebaseMessaging
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -114,7 +114,7 @@ fun DebugSettingsScreen(
     val askNotificationsPermission =
         rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
             if (isGranted) {
-                FirebaseMessaging.getInstance().token.addOnCompleteListener(
+                /* FirebaseMessaging.getInstance().token.addOnCompleteListener(
                     OnCompleteListener { task ->
                         if (!task.isSuccessful) {
                             Log.e(
@@ -128,7 +128,7 @@ fun DebugSettingsScreen(
                         scope.launch {
                             subscribePush(auth = task.result)
                         }
-                    })
+                    }) */
             }
         }
     var showC2dmDataDialogue by remember { mutableStateOf(false) }
@@ -257,7 +257,7 @@ fun DebugSettingsScreen(
                     ElevatedButton(onClick = {
                         playServicesAvailable = GoogleApiAvailabilityLight.getInstance()
                             .isGooglePlayServicesAvailable(context) == ConnectionResult.SUCCESS
-                        FirebaseMessaging.getInstance().token.addOnCompleteListener(
+                        /* FirebaseMessaging.getInstance().token.addOnCompleteListener(
                             OnCompleteListener { task ->
                                 if (!task.isSuccessful) {
                                     Log.e(
@@ -272,7 +272,7 @@ fun DebugSettingsScreen(
 
                                 fcmToken = task.result
                                 showC2dmDataDialogue = true
-                            })
+                            }) */
                     }) {
                         Text("Show Notification Properties")
                     }

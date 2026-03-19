@@ -13,7 +13,7 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.sentry.android)
     alias(libs.plugins.sqldelight)
-    alias(libs.plugins.google.services)
+    // alias(libs.plugins.google.services)
     id("kotlin-kapt")
     id("kotlin-parcelize")
 }
@@ -262,8 +262,8 @@ dependencies {
     // implementation(libs.livekit.android.camerax)
     // implementation(libs.livekit.android.compose)
 
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.messaging)
+    // implementation(platform(libs.firebase.bom))
+    // implementation(libs.firebase.messaging)
 
     implementation(libs.shimmer)
 
