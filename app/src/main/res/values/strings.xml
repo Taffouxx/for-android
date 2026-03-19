@@ -841,10 +841,4 @@
     <string name="user_badge_partner1">Partner</string>
     <string name="user_badge_partner2">Partner</string>
     <string name="user_badge_partner3">Partner</string>
-
-    <string name="user_badge_battlepass">Battle Pass</string>
-    <string name="user_badge_designer">Designer</string>
-    <string name="user_badge_partner1">Partner</string>
-    <string name="user_badge_partner2">Partner</string>
-    <string name="user_badge_partner3">Partner</string>
 </resources>
