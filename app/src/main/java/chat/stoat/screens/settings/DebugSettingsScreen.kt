@@ -53,9 +53,9 @@ import chat.stoat.persistence.Database
 import chat.stoat.persistence.KVStorage
 import chat.stoat.persistence.SqlStorage
 import chat.stoat.ui.theme.FragmentMono
-import com.google.android.gms.common.ConnectionResult
-import com.google.android.gms.common.GoogleApiAvailabilityLight
-import com.google.android.gms.tasks.OnCompleteListener
+// import com.google.android.gms.common.ConnectionResult
+// import com.google.android.gms.common.GoogleApiAvailabilityLight
+// import com.google.android.gms.tasks.OnCompleteListener
 // import com.google.firebase.messaging.FirebaseMessaging
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -255,8 +255,8 @@ fun DebugSettingsScreen(
                     }
 
                     ElevatedButton(onClick = {
-                        playServicesAvailable = GoogleApiAvailabilityLight.getInstance()
-                            .isGooglePlayServicesAvailable(context) == ConnectionResult.SUCCESS
+                        // playServicesAvailable = GoogleApiAvailabilityLight.getInstance()
+                        //    .isGooglePlayServicesAvailable(context) == ConnectionResult.SUCCESS
                         /* FirebaseMessaging.getInstance().token.addOnCompleteListener(
                             OnCompleteListener { task ->
                                 if (!task.isSuccessful) {
